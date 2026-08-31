@@ -201,8 +201,8 @@ img { max-width: 100%; }
   align-items: center;
   gap: 20px;
 }
-.map-placeholder { width: 110px; flex-shrink: 0; }
-.map-img { width: 110px; height: auto; display: block; }
+.map-placeholder { width: 140px; flex-shrink: 0; }
+.map-img { width: 140px; height: auto; display: block; }
 .title-area {
   display: flex;
   align-items: center;
