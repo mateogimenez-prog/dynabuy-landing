@@ -33,7 +33,7 @@
         <div class="team-members">
           <div class="team-member">
             <div class="avatar-wrap">
-              <img src="public/patricia-gratas.jpg" alt="Patricia Gratas" class="avatar" onerror="this.src=''; this.classList.add('avatar-placeholder')">
+              <img src="public/patricia-gratas.png" alt="Patricia Gratas" class="avatar" onerror="this.src=''; this.classList.add('avatar-placeholder')">
             </div>
             <div class="member-info">
               <strong>Patricia GRATAS</strong>
@@ -65,7 +65,7 @@
           </div>
           <div class="team-member">
             <div class="avatar-wrap">
-              <img src="public/tanguy-baricault.jpg" alt="Tanguy Baricault" class="avatar" onerror="this.src=''; this.classList.add('avatar-placeholder')">
+              <img src="public/tanguy-baricault.png" alt="Tanguy Baricault" class="avatar" onerror="this.src=''; this.classList.add('avatar-placeholder')">
             </div>
             <div class="member-info">
               <strong>Tanguy BARICAULT</strong>
@@ -87,20 +87,16 @@
     </div>
   </header>
 
-  <!-- BANDEAU ÉVÉNEMENT DU MOIS -->
-  <section class="event-banner">
-    <img src="public/event-banner.jpg" alt="Événement du mois" class="banner-img" onerror="this.style.display='none'; this.parentElement.classList.add('banner-no-img')">
-    <div class="banner-overlay">
-      <div class="banner-date">
-        <em>Jeudi 27 Aout</em><br>19h à 23h
-      </div>
-      <div class="banner-title">
-        <strong>Grand Barrail</strong><br>
-        <span>Saint Emilion</span>
+  <!-- BANDEAU PROCHAINE RÉUNION (dynamique) -->
+  <section class="event-banner" id="next-meeting-banner">
+    <div class="banner-overlay banner-overlay--general">
+      <div class="banner-date" id="banner-date">—</div>
+      <div class="banner-title" id="banner-title">
+        <strong>Prochaine Rencontre Dirigeants</strong>
       </div>
       <div class="banner-right">
-        <span>Soirée Blanche<br>Retour des plages</span>
-        <a href="https://www.rencontres-dirigeants.com" target="_blank" class="btn-register-banner">Inscrivez-vous ici &gt;</a>
+        <span id="banner-info">Nouvelle-Aquitaine</span>
+        <a href="https://www.rencontres-dirigeants.com" target="_blank" class="btn-register-banner" id="banner-btn">Inscrivez-vous ici &gt;</a>
       </div>
     </div>
   </section>
@@ -110,15 +106,7 @@
     <div class="meetings-header">
       <div class="meetings-map-title">
         <div class="map-placeholder">
-          <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" class="map-svg">
-            <path d="M30,10 L90,10 L100,40 L95,80 L80,120 L60,150 L40,120 L25,80 L20,40 Z" fill="none" stroke="#b5342f" stroke-width="2"/>
-            <text x="35" y="40" font-size="10" fill="#b5342f">Gironde</text>
-            <text x="58" y="52" font-size="8" fill="#666">33</text>
-            <text x="28" y="80" font-size="8" fill="#666">Landes</text>
-            <text x="42" y="92" font-size="7" fill="#666">40</text>
-            <text x="22" y="118" font-size="7" fill="#666">64 Pyrénées-</text>
-            <text x="22" y="128" font-size="7" fill="#666">Atlantiques</text>
-          </svg>
+          <img src="public/map-nouvelle-aquitaine.png" alt="Carte Nouvelle-Aquitaine" class="map-img">
         </div>
         <div class="title-area">
           <div class="calendar-icon">

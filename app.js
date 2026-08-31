@@ -17,7 +17,30 @@ async function loadMeetings() {
     console.error('Erreur chargement meetings.json:', e);
     allMeetings = { gironde: [], 'pays-basque-landes-bearn': [] };
   }
+  renderBanner();
   renderMeetings(currentRegion);
+}
+
+function renderBanner() {
+  // Prendre la réunion la plus proche toutes régions confondues
+  const all = [
+    ...(allMeetings.gironde || []),
+    ...(allMeetings['pays-basque-landes-bearn'] || [])
+  ].filter(m => m.dateISO >= new Date().toISOString().slice(0,10))
+   .sort((a, b) => a.dateISO.localeCompare(b.dateISO));
+
+  const next = all[0];
+  if (!next) return;
+
+  const dateEl = document.getElementById('banner-date');
+  const titleEl = document.getElementById('banner-title');
+  const infoEl = document.getElementById('banner-info');
+  const btnEl = document.getElementById('banner-btn');
+
+  if (dateEl) dateEl.innerHTML = `<em>${escHtml(next.date)}</em><br>${escHtml(next.time)}`;
+  if (titleEl) titleEl.innerHTML = `<strong>${escHtml(next.venue !== 'À confirmer' ? next.venue : 'Rencontre Dirigeants')}</strong><br><span>${escHtml(next.city)}</span>`;
+  if (infoEl) infoEl.textContent = next.type || 'Rencontre Dirigeants';
+  if (btnEl) { btnEl.href = next.registrationUrl || FALLBACK_URL; }
 }
 
 function switchRegion(region) {

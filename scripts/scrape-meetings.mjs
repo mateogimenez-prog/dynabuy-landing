@@ -120,35 +120,30 @@ async function scrape() {
   console.log('📸 Capture: /tmp/dynabuy-debug.png');
 
   // ── Extraction depuis les cartes .card-meeting ────────────────────────────
-  // Structure réelle du site :
-  //   h3.no-rfs                  → city
-  //   .card-meeting-body-badge   → date ("3 sept. 2026")
-  //   .card-meeting-body-hours   → time ("18h00 à 20h30")
-  //   .card-meeting-body-agency h2 → animator name
-  //   .card-rd-action a          → inscription URL
-  //   .card-meeting-meeting-format-* → format label
   const rawCards = await page.evaluate(() => {
     const cards = document.querySelectorAll('.card-meeting');
     return [...cards].map(card => {
       const t = sel => card.querySelector(sel)?.innerText?.trim() || '';
-      const attr = (sel, a) => card.querySelector(sel)?.getAttribute(a) || '';
 
       const city = t('h3.no-rfs') || t('h3');
       const dateBadge = t('.card-meeting-body-badge');
       const hours = t('.card-meeting-body-hours');
       const animatorName = t('.card-meeting-body-agency h2');
 
-      // URL d'inscription : lien avec #inscription en priorité
       const inscriptionLink = card.querySelector('.card-rd-action a')?.href
         || card.querySelector('a[href*="inscription"]')?.href
         || card.querySelector('a')?.href
         || '';
 
-      // Format : face-to-face, meal, etc. → on dérive le type
+      // Lien vers la page détail (pour récupérer le lieu)
+      const detailLink = card.querySelector('a.card-meeting-body')?.href
+        || card.querySelector('a')?.href
+        || '';
+
       const formatClass = [...card.querySelectorAll('[class*="meeting-format"]')]
         .map(el => el.className).join(' ');
 
-      return { city, dateBadge, hours, animatorName, inscriptionLink, formatClass };
+      return { city, dateBadge, hours, animatorName, inscriptionLink, detailLink, formatClass };
     });
   });
 
@@ -196,10 +191,11 @@ async function scrape() {
       date: parsed.label,
       dateISO: parsed.iso,
       time: card.hours || '',
-      venue: 'À confirmer',   // non disponible sur la page liste
+      venue: '',   // sera rempli après par fetchVenue()
       city,
       type,
       registrationUrl: card.inscriptionLink || 'https://www.rencontres-dirigeants.com',
+      _detailLink: card.detailLink,
     };
 
     if (region) {
@@ -211,6 +207,33 @@ async function scrape() {
   }
 
   console.log(`\n✅ ${meetings.length} réunions valides trouvées`);
+
+  // ── Récupérer les noms de lieux sur les pages détail ─────────────────────
+  console.log('\n🔍 Récupération des lieux sur les pages détail...');
+  const detailBrowser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+  const detailContext = await detailBrowser.newContext({
+    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    locale: 'fr-FR',
+  });
+
+  for (const meeting of meetings) {
+    if (!meeting._detailLink) { meeting.venue = 'À confirmer'; continue; }
+    try {
+      const dp = await detailContext.newPage();
+      await dp.goto(meeting._detailLink, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      const venue = await dp.evaluate(() => {
+        // Le lieu est dans h2.card-rd-title dont le parent direct est .position-relative
+        return document.querySelector('.position-relative > .card-rd > h2.card-rd-title')?.innerText?.trim() || '';
+      });
+      meeting.venue = venue.trim() || 'À confirmer';
+      console.log(`  📍 ${meeting.city}: ${meeting.venue}`);
+      await dp.close();
+    } catch {
+      meeting.venue = 'À confirmer';
+    }
+  }
+
+  await detailBrowser.close();
   return meetings;
 }
 
@@ -236,7 +259,7 @@ async function main() {
   };
 
   for (const m of scrapedMeetings) {
-    const { _region, ...clean } = m;
+    const { _region, _detailLink, ...clean } = m;
     result[_region]?.push(clean);
   }
 
