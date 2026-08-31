@@ -1,0 +1,417 @@
+:root {
+  --bg: #fdf1f0;
+  --red: #b5342f;
+  --red-dark: #922820;
+  --border: #e8c5c4;
+  --text: #1a1a1a;
+  --text-muted: #555;
+  --white: #ffffff;
+  --card-radius: 8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; }
+
+/* ── HEADER ── */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px 16px;
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 160px;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  color: var(--text-muted);
+}
+.social-icons a { color: var(--text-muted); transition: color .2s; }
+.social-icons a:hover { color: var(--red); }
+
+.logo { max-width: 150px; height: auto; }
+.logo-text-dyna { font-size: 28px; font-weight: 800; color: var(--red); letter-spacing: -1px; }
+.logo-text-region { font-size: 11px; font-weight: 600; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+
+.btn-join {
+  display: inline-block;
+  border: 2px solid var(--red);
+  color: var(--red);
+  padding: 6px 16px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  transition: all .2s;
+  width: fit-content;
+}
+.btn-join:hover { background: var(--red); color: var(--white); }
+
+/* ── ÉQUIPE ── */
+.team-block {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 20px;
+  background: var(--white);
+}
+.team-members {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 150px;
+  text-align: center;
+}
+.avatar-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--border);
+  background: #f0d8d8;
+}
+.avatar { width: 100%; height: 100%; object-fit: cover; }
+.avatar-placeholder { background: #e8c5c4; width: 100%; height: 100%; }
+
+.member-info strong {
+  display: block;
+  font-size: 14px;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  transition: color .2s;
+}
+.contact-link:hover { color: var(--red); }
+.email-link { word-break: break-all; }
+
+.team-cta { text-align: center; margin-top: 16px; }
+.btn-team {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  transition: background .2s;
+}
+.btn-team:hover { background: var(--red-dark); }
+
+/* ── BANDEAU ÉVÉNEMENT ── */
+.event-banner {
+  position: relative;
+  width: 100%;
+  max-height: 340px;
+  overflow: hidden;
+  background: #2a1a1a;
+}
+.banner-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.85;
+}
+.banner-no-img { height: 220px; background: linear-gradient(135deg, #3a1a1a, #b5342f44); }
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  color: var(--white);
+}
+.banner-date {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0,0,0,.6);
+  align-self: flex-start;
+}
+.banner-title {
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,.7);
+}
+.banner-title strong { font-size: clamp(22px, 4vw, 38px); display: block; }
+.banner-title span { font-size: clamp(16px, 3vw, 26px); }
+.banner-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  font-size: 15px;
+  text-shadow: 0 2px 4px rgba(0,0,0,.6);
+  align-self: flex-end;
+}
+.btn-register-banner {
+  display: inline-block;
+  border: 2px solid var(--white);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(0,0,0,.2);
+  backdrop-filter: blur(4px);
+  transition: all .2s;
+}
+.btn-register-banner:hover { background: var(--white); color: var(--red); }
+
+/* ── SECTION RÉUNIONS ── */
+.meetings-section {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+.meetings-header { margin-bottom: 20px; }
+.meetings-map-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.map-placeholder { width: 80px; flex-shrink: 0; }
+.map-svg { width: 80px; height: auto; }
+.title-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+.title-area h2 {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* ── TOGGLE ── */
+.region-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+.region-toggle {
+  display: flex;
+  background: var(--white);
+  border: 2px solid var(--red);
+  border-radius: 32px;
+  overflow: hidden;
+}
+.toggle-btn {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: var(--red);
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.toggle-btn.active {
+  background: var(--red);
+  color: var(--white);
+}
+.toggle-btn:hover:not(.active) { background: #fce8e8; }
+
+/* ── BANDEAU RÉGION ── */
+.region-banner {
+  background: var(--red);
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+/* ── TABLEAU DESKTOP ── */
+.meetings-table-wrap { overflow-x: auto; }
+.meetings-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+.meetings-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background .15s;
+}
+.meetings-table tbody tr:hover { background: #fff5f5; }
+.meetings-table td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.cell-date { min-width: 160px; font-weight: 600; }
+.cell-date em { font-style: italic; display: block; }
+.cell-date span { font-size: 13px; color: var(--text-muted); }
+.cell-btn { white-space: nowrap; }
+.cell-venue { min-width: 200px; }
+.cell-venue strong { display: block; font-weight: 600; }
+.cell-venue span { font-size: 13px; color: var(--text-muted); }
+.cell-type { font-weight: 500; color: var(--text-muted); white-space: nowrap; }
+.loading-cell { text-align: center; color: var(--text-muted); padding: 32px; }
+
+.btn-register {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .2s;
+}
+.btn-register:hover { background: var(--red-dark); }
+
+/* ── CARTES MOBILE ── */
+.meetings-cards { display: none; }
+.meeting-card-mobile {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.card-date { font-weight: 600; font-size: 14px; }
+.card-date small { display: block; font-size: 12px; color: var(--text-muted); font-weight: 400; }
+.card-type { font-size: 12px; color: var(--text-muted); background: #fce8e8; color: var(--red); padding: 3px 10px; border-radius: 12px; white-space: nowrap; }
+.card-venue strong { display: block; font-size: 14px; font-weight: 600; }
+.card-venue span { font-size: 13px; color: var(--text-muted); }
+.card-actions { margin-top: 12px; }
+
+/* ── LIEN DÉCOUVRIR ── */
+.discover-link {
+  text-align: center;
+  margin: 24px 0;
+  font-size: 14px;
+}
+.discover-link a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  transition: color .2s;
+}
+.discover-link a:hover { color: var(--red); }
+
+/* ── FAQ ── */
+.faq-section {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 40px 24px;
+}
+.faq-inner { max-width: 1100px; margin: 0 auto; }
+.faq-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  position: relative;
+}
+.faq-title-row::before, .faq-title-row::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.faq-title-row h2 { font-size: 24px; font-weight: 700; }
+.faq-badge {
+  background: var(--red);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+.faq-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.faq-illustration { width: 260px; flex-shrink: 0; }
+.faq-illustration img { width: 100%; border-radius: 8px; }
+.faq-questions { flex: 1; }
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: var(--white);
+}
+.faq-item summary {
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; color: var(--red); }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p {
+  padding: 0 18px 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .header-inner { flex-direction: column; }
+  .faq-layout { flex-direction: column; }
+  .faq-illustration { width: 100%; max-width: 300px; }
+}
+
+@media (max-width: 640px) {
+  .site-header { padding: 12px 16px; }
+  .team-members { gap: 12px; }
+  .team-member { min-width: 120px; }
+  .avatar-wrap { width: 64px; height: 64px; }
+  .banner-overlay { flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+  .banner-right { align-items: center; }
+  .meetings-table { display: none; }
+  .meetings-cards { display: block; }
+  .toggle-btn { padding: 9px 14px; font-size: 13px; }
+}

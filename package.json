@@ -1,0 +1,14 @@
+{
+  "name": "dynabuy-landing",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape-meetings.mjs",
+    "dev": "npx serve . -p 3000"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

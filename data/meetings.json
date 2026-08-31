@@ -1,0 +1,133 @@
+{
+  "lastUpdated": "2026-08-31T10:48:52.933Z",
+  "gironde": [
+    {
+      "date": "Jeudi 3 Septembre",
+      "dateISO": "2026-09-03",
+      "time": "18h00 à 20h30",
+      "venue": "À confirmer",
+      "city": "Bordeaux",
+      "type": "Afterwork",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35612#inscription"
+    },
+    {
+      "date": "Mercredi 9 Septembre",
+      "dateISO": "2026-09-09",
+      "time": "12h30 à 14h00",
+      "venue": "À confirmer",
+      "city": "Merignac",
+      "type": "Déjeuner",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/39191#inscription"
+    },
+    {
+      "date": "Mardi 15 Septembre",
+      "dateISO": "2026-09-15",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Saint Emilion",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35675#inscription"
+    },
+    {
+      "date": "Jeudi 24 Septembre",
+      "dateISO": "2026-09-24",
+      "time": "15h00 à 17h30",
+      "venue": "À confirmer",
+      "city": "Bordeaux",
+      "type": "Après-midi",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35447#inscription"
+    },
+    {
+      "date": "Vendredi 9 Octobre",
+      "dateISO": "2026-10-09",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Saint-Émilion",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35678#inscription"
+    },
+    {
+      "date": "Mardi 13 Octobre",
+      "dateISO": "2026-10-13",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Le Haillan",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35615#inscription"
+    },
+    {
+      "date": "Mercredi 21 Octobre",
+      "dateISO": "2026-10-21",
+      "time": "12h30 à 14h00",
+      "venue": "À confirmer",
+      "city": "Merignac",
+      "type": "Déjeuner",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35399#inscription"
+    },
+    {
+      "date": "Jeudi 29 Octobre",
+      "dateISO": "2026-10-29",
+      "time": "15h00 à 17h30",
+      "venue": "À confirmer",
+      "city": "Bordeaux",
+      "type": "Après-midi",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35453#inscription"
+    }
+  ],
+  "pays-basque-landes-bearn": [
+    {
+      "date": "Jeudi 10 Septembre",
+      "dateISO": "2026-09-10",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Gan",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35381#inscription"
+    },
+    {
+      "date": "Vendredi 11 Septembre",
+      "dateISO": "2026-09-11",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Dax",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35516#inscription"
+    },
+    {
+      "date": "Vendredi 25 Septembre",
+      "dateISO": "2026-09-25",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Bayonne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35582#inscription"
+    },
+    {
+      "date": "Jeudi 1 Octobre",
+      "dateISO": "2026-10-01",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Lons",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35402#inscription"
+    },
+    {
+      "date": "Vendredi 2 Octobre",
+      "dateISO": "2026-10-02",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Dax",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35519#inscription"
+    },
+    {
+      "date": "Vendredi 16 Octobre",
+      "dateISO": "2026-10-16",
+      "time": "09h00 à 11h30",
+      "venue": "À confirmer",
+      "city": "Bayonne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35585#inscription"
+    }
+  ]
+}
