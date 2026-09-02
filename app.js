@@ -28,7 +28,7 @@ function getDept(city, region) {
 const GITHUB_DATA_URL = 'https://raw.githubusercontent.com/mateogimenez-prog/dynabuy-landing/main/data/meetings.json';
 
 async function loadMeetings() {
-  const sources = [GITHUB_DATA_URL, 'data/meetings.json'];
+  const sources = ['data/meetings.json', GITHUB_DATA_URL];
   for (const url of sources) {
     try {
       const res = await fetch(url + '?t=' + Date.now());
