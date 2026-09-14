@@ -10,14 +10,21 @@ const REGION_LABELS = {
 const FALLBACK_URL = 'https://www.rencontres-dirigeants.com/nos-rencontres?region=75&startAt=&endAt=&dateRange=&format=&agency%5B%5D=274&agency%5B%5D=110&agency%5B%5D=254&department=';
 
 const CITY_DEPT = {
-  'gan': 'Pyrénées-Atlantiques', 'pau': 'Pyrénées-Atlantiques',
-  'lons': 'Pyrénées-Atlantiques', 'bayonne': 'Pyrénées-Atlantiques',
-  'anglet': 'Pyrénées-Atlantiques', 'biarritz': 'Pyrénées-Atlantiques',
-  'hendaye': 'Pyrénées-Atlantiques', 'saint-jean-de-luz': 'Pyrénées-Atlantiques',
-  'orthez': 'Pyrénées-Atlantiques', 'oloron-sainte-marie': 'Pyrénées-Atlantiques',
+  // Béarn
+  'gan': 'Béarn', 'pau': 'Béarn', 'lons': 'Béarn', 'lescar': 'Béarn',
+  'billère': 'Béarn', 'jurançon': 'Béarn', 'orthez': 'Béarn',
+  'oloron-sainte-marie': 'Béarn', 'mourenx': 'Béarn', 'artix': 'Béarn',
+  // Pays Basque
+  'bayonne': 'Pays Basque', 'anglet': 'Pays Basque', 'biarritz': 'Pays Basque',
+  'hendaye': 'Pays Basque', 'saint-jean-de-luz': 'Pays Basque',
+  'ciboure': 'Pays Basque', 'saint-jean-pied-de-port': 'Pays Basque',
+  'hasparren': 'Pays Basque', 'cambo-les-bains': 'Pays Basque',
+  'mauléon-licharre': 'Pays Basque', 'mouguerre': 'Pays Basque',
+  // Landes
   'dax': 'Landes', 'mont-de-marsan': 'Landes', 'biscarrosse': 'Landes',
   'mimizan': 'Landes', 'parentis-en-born': 'Landes', 'soustons': 'Landes',
-  'saint-paul-lès-dax': 'Landes', 'morcenx': 'Landes',
+  'saint-paul-lès-dax': 'Landes', 'morcenx': 'Landes', 'tarnos': 'Landes',
+  'capbreton': 'Landes', 'hossegor': 'Landes',
 };
 
 function getDept(city, region) {
