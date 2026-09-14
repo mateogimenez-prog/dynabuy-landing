@@ -77,13 +77,10 @@ function switchRegion(region) {
 function filterUpcoming(meetings) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const twoMonths = new Date(today);
-  twoMonths.setMonth(today.getMonth() + 2);
   return (meetings || []).filter(m => {
     if (!m.dateISO) return true;
-    const d = new Date(m.dateISO);
-    return d >= today && d <= twoMonths;
-  });
+    return new Date(m.dateISO) >= today;
+  }).slice(0, 8);
 }
 
 function renderMeetings(region) {
