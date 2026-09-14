@@ -201,20 +201,21 @@ img { max-width: 100%; }
   display: flex;
   align-items: center;
   gap: 32px;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.map-placeholder { width: 220px; flex-shrink: 0; }
-.map-img { width: 220px; height: auto; display: block; }
+.map-placeholder { width: 180px; flex-shrink: 0; }
+.map-img { width: 180px; height: auto; display: block; }
 .title-area {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
 }
 .title-area h2 {
   font-size: clamp(22px, 2.8vw, 32px);
   font-weight: 700;
   color: var(--text);
-  white-space: nowrap;
+  text-align: center;
 }
 
 /* ── TOGGLE ── */
