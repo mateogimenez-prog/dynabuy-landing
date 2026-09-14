@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, '..', 'data', 'meetings.json');
-const SOURCE_URL = 'https://www.rencontres-dirigeants.com/nos-rencontres?region=&startAt=&endAt=&dateRange=&format=&agency%5B%5D=274&agency%5B%5D=110&agency%5B%5D=254&department=';
+const SOURCE_URL = 'https://www.rencontres-dirigeants.com/nos-rencontres?region=75&startAt=&endAt=&dateRange=&format=&agency%5B%5D=274&agency%5B%5D=110&agency%5B%5D=254&department=';
 
 const TARGET_ANIMATORS = ['Tanguy Baricault', 'Patricia Gratas', 'Michaël Gimenez', 'Michael Gimenez', 'Mateo Gimenez'];
 

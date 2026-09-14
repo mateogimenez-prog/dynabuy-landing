@@ -7,7 +7,7 @@ const REGION_LABELS = {
   'pays-basque-landes-bearn': 'Pays-Basque, Landes, Béarn'
 };
 
-const FALLBACK_URL = 'https://www.rencontres-dirigeants.com';
+const FALLBACK_URL = 'https://www.rencontres-dirigeants.com/nos-rencontres?region=75&startAt=&endAt=&dateRange=&format=&agency%5B%5D=274&agency%5B%5D=110&agency%5B%5D=254&department=';
 
 const CITY_DEPT = {
   'gan': 'Pyrénées-Atlantiques', 'pau': 'Pyrénées-Atlantiques',
