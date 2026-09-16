@@ -41,7 +41,6 @@ jobs:
           echo "Le scraping a échoué. Restauration du dernier meetings.json valide."
           cp data/meetings.json.bak data/meetings.json || true
           echo "Vérifiez les logs ci-dessus pour diagnostiquer l'erreur."
-          exit 1
 
       - name: Clean up backup
         if: steps.scrape.outcome == 'success'

@@ -246,8 +246,8 @@ async function main() {
   }
 
   if (!scrapedMeetings || scrapedMeetings.length === 0) {
-    console.warn('\n⚠️  Aucune réunion trouvée. meetings.json non écrasé.');
-    process.exit(1);
+    console.warn('\n⚠️  Aucune réunion trouvée. meetings.json non modifié.');
+    process.exit(0);
   }
 
   const result = {
