@@ -274,6 +274,7 @@ img { max-width: 100%; }
   width: 100%;
   border-collapse: collapse;
   background: var(--white);
+  table-layout: fixed;
 }
 .meetings-table tbody tr {
   border-bottom: 1px solid var(--border);
@@ -281,18 +282,18 @@ img { max-width: 100%; }
 }
 .meetings-table tbody tr:hover { background: #fff5f5; }
 .meetings-table td {
-  padding: 14px 16px;
+  padding: 18px 20px;
   vertical-align: middle;
   font-size: 14px;
 }
-.cell-date { width: 190px; font-weight: 600; }
-.cell-date em { font-style: italic; display: block; }
+.cell-date { width: 22%; font-weight: 600; }
+.cell-date em { font-style: italic; display: block; font-size: 15px; }
 .cell-date span { font-size: 13px; color: var(--text-muted); }
-.cell-btn { width: 160px; white-space: nowrap; }
-.cell-venue { min-width: 200px; }
-.cell-venue strong { display: block; font-weight: 600; }
+.cell-btn { width: 20%; white-space: nowrap; }
+.cell-venue { width: 44%; }
+.cell-venue strong { display: block; font-weight: 600; font-size: 15px; }
 .cell-venue span { font-size: 13px; color: var(--text-muted); }
-.cell-type { font-weight: 500; color: var(--text-muted); white-space: nowrap; }
+.cell-type { width: 14%; font-weight: 500; color: var(--text-muted); white-space: nowrap; text-align: right; }
 .activity-badge { display: block; margin-top: 5px; font-size: 11px; font-weight: 600; color: #7D1040; background: #fdf2f8; border: 1px solid #f0abcf; border-radius: 10px; padding: 2px 10px; white-space: nowrap; width: fit-content; }
 .loading-cell { text-align: center; color: var(--text-muted); padding: 32px; }
 
