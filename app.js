@@ -118,6 +118,7 @@ function renderTable(meetings) {
       <td class="cell-venue">
         <strong>${escHtml(m.venue || 'À confirmer')}</strong>
         <span>${cityLine}</span>
+        ${m.activity ? `<span class="activity-badge">${escHtml(m.activity)}</span>` : ''}
       </td>
       <td class="cell-type">${escHtml(m.type || '')}</td>
     </tr>`;
@@ -142,6 +143,7 @@ function renderCards(meetings) {
       <div class="card-venue">
         <strong>${escHtml(m.venue || 'À confirmer')}</strong>
         <span>${escHtml(m.city || '')}${getDept(m.city || '', currentRegion) ? ' · ' + getDept(m.city || '', currentRegion) : ''}</span>
+        ${m.activity ? `<span class="activity-badge">${escHtml(m.activity)}</span>` : ''}
       </div>
       <div class="card-actions">
         <a href="${escAttr(m.registrationUrl || FALLBACK_URL)}" target="_blank" rel="noopener" class="btn-register">Inscrivez-vous ici !</a>

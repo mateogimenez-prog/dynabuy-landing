@@ -35,6 +35,7 @@
       "venue": "Cloître des Cordeliers",
       "city": "Saint-Émilion",
       "type": "Matinale",
+      "activity": "Visite des caves",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35678#inscription"
     },
     {
@@ -44,6 +45,7 @@
       "venue": "Vins et Bar (V and B)",
       "city": "Le Haillan",
       "type": "Matinale",
+      "activity": "CE Haillan",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35615#inscription"
     },
     {
@@ -62,6 +64,7 @@
       "venue": "Golf Blue Green de Bordeaux Lac",
       "city": "Bordeaux",
       "type": "Après-midi",
+      "activity": "🎃 Halloween",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35453#inscription"
     },
     {
@@ -71,15 +74,17 @@
       "venue": "Virtual Room Bordeaux",
       "city": "Bordeaux",
       "type": "Matinale",
+      "activity": "Escape game",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35618#inscription"
     },
     {
       "date": "Mardi 17 Novembre",
       "dateISO": "2026-11-17",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
-      "city": "Libourne",
+      "venue": "Aérocampus",
+      "city": "Latresne",
       "type": "Matinale",
+      "activity": "Visite hangar & Rafale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35681#inscription"
     },
     {
@@ -104,7 +109,7 @@
       "date": "Jeudi 10 Décembre",
       "dateISO": "2026-12-10",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
+      "venue": "Maison Charmeilles Le Comptoir",
       "city": "Libourne",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35684#inscription"
@@ -217,13 +222,14 @@
       "venue": "Maison Tournesol",
       "city": "Gan",
       "type": "Matinale",
+      "activity": "Pieds nus",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35408#inscription"
     },
     {
       "date": "Vendredi 6 Novembre",
       "dateISO": "2026-11-06",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
+      "venue": "PULSEO",
       "city": "Dax",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35492#inscription"
