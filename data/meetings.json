@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-09-09T10:01:33.576Z",
+  "lastUpdated": "2026-09-24T15:58:26.231Z",
   "gironde": [
-    {
-      "date": "Mercredi 9 Septembre",
-      "dateISO": "2026-09-09",
-      "time": "12h30 à 14h00",
-      "venue": "M et SPA Mérignac",
-      "city": "Merignac",
-      "type": "Déjeuner",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/39191"
-    },
-    {
-      "date": "Mardi 15 Septembre",
-      "dateISO": "2026-09-15",
-      "time": "09h00 à 11h30",
-      "venue": "Château Soutard",
-      "city": "Saint Emilion",
-      "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35675#inscription"
-    },
-    {
-      "date": "Jeudi 24 Septembre",
-      "dateISO": "2026-09-24",
-      "time": "15h00 à 17h30",
-      "venue": "Golf Blue Green de Bordeaux Lac",
-      "city": "Bordeaux",
-      "type": "Après-midi",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35447#inscription"
-    },
     {
       "date": "Vendredi 9 Octobre",
       "dateISO": "2026-10-09",
@@ -35,18 +8,7 @@
       "venue": "Cloître des Cordeliers",
       "city": "Saint-Émilion",
       "type": "Matinale",
-      "activity": "Visite des caves",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35678#inscription"
-    },
-    {
-      "date": "Mardi 13 Octobre",
-      "dateISO": "2026-10-13",
-      "time": "09h00 à 11h30",
-      "venue": "Vins et Bar (V and B)",
-      "city": "Le Haillan",
-      "type": "Matinale",
-      "activity": "En collaboration avec le CEH",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35615#inscription"
     },
     {
       "date": "Mercredi 21 Octobre",
@@ -64,28 +26,7 @@
       "venue": "Golf Blue Green de Bordeaux Lac",
       "city": "Bordeaux",
       "type": "Après-midi",
-      "activity": "🎃 Halloween",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35453#inscription"
-    },
-    {
-      "date": "Mardi 3 Novembre",
-      "dateISO": "2026-11-03",
-      "time": "09h00 à 12h30",
-      "venue": "Virtual Room Bordeaux",
-      "city": "Bordeaux",
-      "type": "Matinale",
-      "activity": "Escape game",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35618#inscription"
-    },
-    {
-      "date": "Mardi 17 Novembre",
-      "dateISO": "2026-11-17",
-      "time": "09h00 à 11h30",
-      "venue": "Aérocampus",
-      "city": "Latresne",
-      "type": "Matinale",
-      "activity": "Visite hangar & Rafale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35681#inscription"
     },
     {
       "date": "Jeudi 26 Novembre",
@@ -95,15 +36,6 @@
       "city": "Bordeaux",
       "type": "Après-midi",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35459#inscription"
-    },
-    {
-      "date": "Mardi 1 Décembre",
-      "dateISO": "2026-12-01",
-      "time": "09h00 à 11h30",
-      "venue": "Château Trigant",
-      "city": "Villenave-D'ornon",
-      "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35621#inscription"
     },
     {
       "date": "Jeudi 10 Décembre",
@@ -142,15 +74,6 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44598#inscription"
     },
     {
-      "date": "Jeudi 21 Janvier",
-      "dateISO": "2027-01-21",
-      "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
-      "city": "Talence",
-      "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44628#inscription"
-    },
-    {
       "date": "Jeudi 28 Janvier",
       "dateISO": "2027-01-28",
       "time": "15h00 à 17h30",
@@ -158,27 +81,36 @@
       "city": "Bordeaux",
       "type": "Après-midi",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44424#inscription"
+    },
+    {
+      "date": "Mardi 2 Février",
+      "dateISO": "2027-02-02",
+      "time": "09h00 à 11h30",
+      "venue": "Lieu à déterminer",
+      "city": "Libourne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44601#inscription"
+    },
+    {
+      "date": "Jeudi 25 Février",
+      "dateISO": "2027-02-25",
+      "time": "15h00 à 17h30",
+      "venue": "Golf Blue Green de Bordeaux Lac",
+      "city": "Bordeaux",
+      "type": "Après-midi",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44427#inscription"
+    },
+    {
+      "date": "Mardi 2 Mars",
+      "dateISO": "2027-03-02",
+      "time": "09h00 à 11h30",
+      "venue": "Lieu à déterminer",
+      "city": "Libourne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44604#inscription"
     }
   ],
   "pays-basque-landes-bearn": [
-    {
-      "date": "Jeudi 10 Septembre",
-      "dateISO": "2026-09-10",
-      "time": "09h00 à 11h30",
-      "venue": "MAISON AMARANTE",
-      "city": "Gan",
-      "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35381#inscription"
-    },
-    {
-      "date": "Vendredi 11 Septembre",
-      "dateISO": "2026-09-11",
-      "time": "09h00 à 11h30",
-      "venue": "PULSEO",
-      "city": "Dax",
-      "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35516#inscription"
-    },
     {
       "date": "Vendredi 25 Septembre",
       "dateISO": "2026-09-25",
@@ -186,7 +118,7 @@
       "venue": "Le Château Coworking Coliving",
       "city": "Bayonne",
       "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35582#inscription"
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35582"
     },
     {
       "date": "Jeudi 1 Octobre",
@@ -222,7 +154,6 @@
       "venue": "Maison Tournesol",
       "city": "Gan",
       "type": "Matinale",
-      "activity": "Réunion pieds nus",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35408#inscription"
     },
     {
@@ -244,15 +175,6 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35588#inscription"
     },
     {
-      "date": "Jeudi 3 Décembre",
-      "dateISO": "2026-12-03",
-      "time": "09h00 à 11h30",
-      "venue": "PAU",
-      "city": "Pau",
-      "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35414#inscription"
-    },
-    {
       "date": "Vendredi 4 Décembre",
       "dateISO": "2026-12-04",
       "time": "09h00 à 11h30",
@@ -271,13 +193,13 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35591#inscription"
     },
     {
-      "date": "Vendredi 8 Janvier",
-      "dateISO": "2027-01-08",
-      "time": "09h00 à 11h30",
-      "venue": "PAU",
+      "date": "Samedi 16 Janvier",
+      "dateISO": "2027-01-16",
+      "time": "11h00 à 17h00",
+      "venue": "Section Paloise Béarn Pyrénées",
       "city": "Pau",
       "type": "Matinale",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44565#inscription"
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/50456#inscription"
     },
     {
       "date": "Jeudi 21 Janvier",
@@ -296,6 +218,60 @@
       "city": "Dax",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44496#inscription"
+    },
+    {
+      "date": "Vendredi 5 Février",
+      "dateISO": "2027-02-05",
+      "time": "09h00 à 11h30",
+      "venue": "PAU",
+      "city": "Pau",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44568#inscription"
+    },
+    {
+      "date": "Jeudi 25 Février",
+      "dateISO": "2027-02-25",
+      "time": "09h00 à 11h30",
+      "venue": "PULSEO",
+      "city": "Dax",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44499#inscription"
+    },
+    {
+      "date": "Vendredi 26 Février",
+      "dateISO": "2027-02-26",
+      "time": "09h00 à 11h30",
+      "venue": "Lieu à déterminer",
+      "city": "Bayonne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44460#inscription"
+    },
+    {
+      "date": "Vendredi 5 Mars",
+      "dateISO": "2027-03-05",
+      "time": "09h00 à 11h30",
+      "venue": "PAU",
+      "city": "Pau",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44571#inscription"
+    },
+    {
+      "date": "Jeudi 18 Mars",
+      "dateISO": "2027-03-18",
+      "time": "09h00 à 11h30",
+      "venue": "PULSEO",
+      "city": "Dax",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44502#inscription"
+    },
+    {
+      "date": "Vendredi 19 Mars",
+      "dateISO": "2027-03-19",
+      "time": "09h00 à 11h30",
+      "venue": "Lieu à déterminer",
+      "city": "Bayonne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44466#inscription"
     }
   ]
 }
