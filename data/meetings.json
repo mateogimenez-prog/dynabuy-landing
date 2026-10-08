@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T10:01:33.576Z",
+  "lastUpdated": "2026-10-08T08:00:00.000Z",
   "gironde": [
     {
       "date": "Mercredi 9 Septembre",
@@ -145,8 +145,8 @@
       "date": "Jeudi 21 Janvier",
       "dateISO": "2027-01-21",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
-      "city": "Talence",
+      "venue": "Now Coworking",
+      "city": "Bordeaux",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44628#inscription"
     },
@@ -158,6 +158,24 @@
       "city": "Bordeaux",
       "type": "Après-midi",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44424#inscription"
+    },
+    {
+      "date": "Mardi 2 Février",
+      "dateISO": "2027-02-02",
+      "time": "09h00 à 11h30",
+      "venue": "Lieu à déterminer",
+      "city": "Libourne",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44601#inscription"
+    },
+    {
+      "date": "Jeudi 11 Février",
+      "dateISO": "2027-02-11",
+      "time": "12h30 à 14h00",
+      "venue": "Hampton by Hilton Bordeaux Mérignac Airport",
+      "city": "Mérignac",
+      "type": "Déjeuner",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44646#inscription"
     }
   ],
   "pays-basque-landes-bearn": [
@@ -265,8 +283,8 @@
       "date": "Vendredi 18 Décembre",
       "dateISO": "2026-12-18",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
-      "city": "Bayonne",
+      "venue": "Mer et Golf Eugénie",
+      "city": "Biarritz",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35591#inscription"
     },
@@ -274,10 +292,19 @@
       "date": "Vendredi 8 Janvier",
       "dateISO": "2027-01-08",
       "time": "09h00 à 11h30",
-      "venue": "PAU",
+      "venue": "Lieu à déterminer",
       "city": "Pau",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44565#inscription"
+    },
+    {
+      "date": "Samedi 16 Janvier",
+      "dateISO": "2027-01-16",
+      "time": "11h00 à 17h00",
+      "venue": "Section Paloise Béarn Pyrénées",
+      "city": "Pau",
+      "type": "Évènementiel",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/50456#inscription"
     },
     {
       "date": "Jeudi 21 Janvier",
