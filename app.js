@@ -113,35 +113,8 @@ function filterUpcoming(meetings) {
 
 function renderMeetings(region) {
   currentMeetings = filterUpcoming(allMeetings[region]);
-  renderEventSpotlight(currentMeetings);
   renderTable(currentMeetings);
   renderCards(currentMeetings);
-}
-
-function renderEventSpotlight(meetings) {
-  const container = document.getElementById('event-spotlight');
-  if (!container) return;
-  const evt = meetings.find(m => m.type === 'Évènementiel');
-  if (!evt) { container.innerHTML = ''; return; }
-  container.innerHTML = `
-    <div class="event-spotlight-card">
-      <div class="esp-badge">🏆 Événement exceptionnel</div>
-      <div class="esp-body">
-        <div class="esp-left">
-          <div class="esp-title">${escHtml(evt.venue)}</div>
-          <div class="esp-sub">Match de Coupe d'Europe de Rugby · Champions Cup</div>
-          <div class="esp-meta">
-            <span class="esp-date">📅 ${escHtml(evt.date)}</span>
-            <span class="esp-time">🕙 ${escHtml(evt.time)}</span>
-            <span class="esp-city">📍 ${escHtml(evt.city)}</span>
-          </div>
-          <p class="esp-desc">Rejoignez-nous pour une Rencontre Dirigeants au cœur du match de la Section Paloise face aux Sale Sharks, dans une loge privatisée avec vue sur le terrain.</p>
-        </div>
-        <div class="esp-right">
-          <a href="${escAttr(evt.registrationUrl || FALLBACK_URL)}" target="_blank" rel="noopener" class="esp-btn">S'inscrire à l'événement →</a>
-        </div>
-      </div>
-    </div>`;
 }
 
 function renderTable(meetings) {
@@ -166,7 +139,7 @@ function renderTable(meetings) {
       <td class="cell-venue">
         <strong>${escHtml(m.venue || 'À confirmer')}</strong>
         <span>${cityLine}</span>
-        ${m.activity ? `<span class="activity-badge">${escHtml(m.activity)}</span>` : ''}
+        ${m.activity ? `<span class="activity-badge${m.type === 'Évènementiel' ? ' activity-badge--sport' : ''}">${escHtml(m.activity)}</span>` : ''}
       </td>
       <td class="cell-type">${escHtml(m.type || '')}</td>
     </tr>`;
@@ -191,7 +164,7 @@ function renderCards(meetings) {
       <div class="card-venue">
         <strong>${escHtml(m.venue || 'À confirmer')}</strong>
         <span>${escHtml(m.city || '')}${getDept(m.city || '', currentRegion) ? ' · ' + getDept(m.city || '', currentRegion) : ''}</span>
-        ${m.activity ? `<span class="activity-badge">${escHtml(m.activity)}</span>` : ''}
+        ${m.activity ? `<span class="activity-badge${m.type === 'Évènementiel' ? ' activity-badge--sport' : ''}">${escHtml(m.activity)}</span>` : ''}
       </div>
       <div class="card-actions">
         <a href="${escAttr(m.registrationUrl || FALLBACK_URL)}" target="_blank" rel="noopener" class="btn-register">Inscrivez-vous ici !</a>
