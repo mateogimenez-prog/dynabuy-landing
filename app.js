@@ -92,8 +92,35 @@ function filterUpcoming(meetings) {
 
 function renderMeetings(region) {
   currentMeetings = filterUpcoming(allMeetings[region]);
+  renderEventSpotlight(currentMeetings);
   renderTable(currentMeetings);
   renderCards(currentMeetings);
+}
+
+function renderEventSpotlight(meetings) {
+  const container = document.getElementById('event-spotlight');
+  if (!container) return;
+  const evt = meetings.find(m => m.type === 'Évènementiel');
+  if (!evt) { container.innerHTML = ''; return; }
+  container.innerHTML = `
+    <div class="event-spotlight-card">
+      <div class="esp-badge">🏆 Événement exceptionnel</div>
+      <div class="esp-body">
+        <div class="esp-left">
+          <div class="esp-title">${escHtml(evt.venue)}</div>
+          <div class="esp-sub">Match de Coupe d'Europe de Rugby · Champions Cup</div>
+          <div class="esp-meta">
+            <span class="esp-date">📅 ${escHtml(evt.date)}</span>
+            <span class="esp-time">🕙 ${escHtml(evt.time)}</span>
+            <span class="esp-city">📍 ${escHtml(evt.city)}</span>
+          </div>
+          <p class="esp-desc">Rejoignez-nous pour une Rencontre Dirigeants au cœur du match de la Section Paloise face aux Sale Sharks, dans une loge privatisée avec vue sur le terrain.</p>
+        </div>
+        <div class="esp-right">
+          <a href="${escAttr(evt.registrationUrl || FALLBACK_URL)}" target="_blank" rel="noopener" class="esp-btn">S'inscrire à l'événement →</a>
+        </div>
+      </div>
+    </div>`;
 }
 
 function renderTable(meetings) {

@@ -449,6 +449,96 @@ img { max-width: 100%; }
   font-style: italic;
 }
 
+/* ── ÉVÉNEMENT EXCEPTIONNEL ── */
+.event-spotlight-card {
+  background: linear-gradient(135deg, #0a1628 0%, #1a2e50 60%, #0f3460 100%);
+  border: 2px solid #c9a227;
+  border-radius: 12px;
+  margin: 0 24px 24px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+}
+.event-spotlight-card::before {
+  content: '🏉';
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 90px;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.esp-badge {
+  background: #c9a227;
+  color: #0a1628;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  display: inline-block;
+}
+.esp-body {
+  padding: 20px 24px 22px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.esp-left { flex: 1; }
+.esp-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.esp-sub {
+  font-size: 13px;
+  color: #c9a227;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.esp-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.esp-meta span {
+  font-size: 13px;
+  color: #b0bfd4;
+  font-weight: 500;
+}
+.esp-desc {
+  font-size: 14px;
+  color: #8fa3be;
+  line-height: 1.6;
+  max-width: 540px;
+}
+.esp-right { flex-shrink: 0; }
+.esp-btn {
+  display: inline-block;
+  background: #c9a227;
+  color: #0a1628;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background .2s, transform .15s;
+}
+.esp-btn:hover { background: #e0b82e; transform: translateY(-1px); }
+
+@media (max-width: 640px) {
+  .event-spotlight-card { margin: 0 12px 20px; }
+  .esp-body { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .esp-title { font-size: 18px; }
+  .esp-btn { width: 100%; text-align: center; }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .header-inner { flex-direction: column; }
