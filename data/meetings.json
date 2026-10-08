@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08T08:00:00.000Z",
+  "lastUpdated": "2026-10-08T09:00:00.000Z",
   "gironde": [
     {
       "date": "Vendredi 9 Octobre",
@@ -10,6 +10,16 @@
       "type": "Matinale",
       "activity": "Visite des caves",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35678#inscription"
+    },
+    {
+      "date": "Mardi 13 Octobre",
+      "dateISO": "2026-10-13",
+      "time": "09h00 à 11h30",
+      "venue": "Vins et Bar (V and B)",
+      "city": "Le Haillan",
+      "type": "Matinale",
+      "activity": "En collaboration avec le CEH",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35615#inscription"
     },
     {
       "date": "Mercredi 21 Octobre",
@@ -31,6 +41,26 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35453#inscription"
     },
     {
+      "date": "Mardi 3 Novembre",
+      "dateISO": "2026-11-03",
+      "time": "09h00 à 12h30",
+      "venue": "Virtual Room Bordeaux",
+      "city": "Bordeaux",
+      "type": "Matinale",
+      "activity": "Escape game",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35618#inscription"
+    },
+    {
+      "date": "Mardi 17 Novembre",
+      "dateISO": "2026-11-17",
+      "time": "09h00 à 11h45",
+      "venue": "Aérocampus Aquitaine",
+      "city": "Latresne",
+      "type": "Matinale",
+      "activity": "Visite hangar & Rafale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35681#inscription"
+    },
+    {
       "date": "Jeudi 26 Novembre",
       "dateISO": "2026-11-26",
       "time": "15h00 à 17h30",
@@ -38,6 +68,15 @@
       "city": "Bordeaux",
       "type": "Après-midi",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35459#inscription"
+    },
+    {
+      "date": "Mardi 1 Décembre",
+      "dateISO": "2026-12-01",
+      "time": "09h00 à 11h30",
+      "venue": "Château Trigant",
+      "city": "Villenave-D'ornon",
+      "type": "Matinale",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35621#inscription"
     },
     {
       "date": "Jeudi 10 Décembre",
