@@ -79,6 +79,27 @@ function switchRegion(region) {
   });
   document.getElementById('region-banner').textContent = REGION_LABELS[region];
   renderMeetings(region);
+  handleSpPopup(region);
+}
+
+function handleSpPopup(region) {
+  const popup = document.getElementById('sp-popup');
+  if (!popup) return;
+  if (region === 'pays-basque-landes-bearn' && !sessionStorage.getItem('sp-closed')) {
+    popup.hidden = false;
+    popup.style.animation = 'none';
+    requestAnimationFrame(() => {
+      popup.style.animation = '';
+    });
+  } else {
+    popup.hidden = true;
+  }
+}
+
+function closeSpPopup() {
+  const popup = document.getElementById('sp-popup');
+  if (popup) popup.hidden = true;
+  sessionStorage.setItem('sp-closed', '1');
 }
 
 function filterUpcoming(meetings) {

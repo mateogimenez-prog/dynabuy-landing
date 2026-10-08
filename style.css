@@ -449,6 +449,119 @@ img { max-width: 100%; }
   font-style: italic;
 }
 
+/* ── POPUP SECTION PALOISE ── */
+.sp-popup {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 320px;
+  background: #0a1628;
+  border: 2px solid #c9a227;
+  border-radius: 14px;
+  overflow: hidden;
+  z-index: 9000;
+  box-shadow: 0 8px 40px rgba(0,0,0,.5);
+  animation: sp-slide-in .4s cubic-bezier(.34,1.4,.64,1) both;
+}
+.sp-popup[hidden] { display: none; }
+@keyframes sp-slide-in {
+  from { transform: translateY(120%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.sp-close {
+  position: absolute;
+  top: 8px; right: 10px;
+  background: rgba(0,0,0,.5);
+  border: none;
+  color: #fff;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1;
+}
+.sp-close:hover { background: var(--red); }
+.sp-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+.sp-content { padding: 14px 16px 16px; }
+.sp-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #c9a227;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: 6px;
+}
+.sp-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.sp-vs {
+  color: #c9a227;
+  font-style: italic;
+  font-size: 14px;
+}
+.sp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.sp-tags span {
+  font-size: 12px;
+  color: #9ab0cc;
+  font-weight: 500;
+}
+.sp-price {
+  background: #c9a227;
+  color: #0a1628 !important;
+  font-weight: 800 !important;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.sp-includes {
+  list-style: none;
+  margin-bottom: 14px;
+}
+.sp-includes li {
+  font-size: 12px;
+  color: #7a98b8;
+  padding: 2px 0;
+  padding-left: 14px;
+  position: relative;
+}
+.sp-includes li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #c9a227;
+  font-weight: 700;
+}
+.sp-btn {
+  display: block;
+  background: #c9a227;
+  color: #0a1628;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background .2s;
+}
+.sp-btn:hover { background: #e0b82e; }
+
+@media (max-width: 400px) {
+  .sp-popup { right: 12px; left: 12px; width: auto; bottom: 16px; }
+}
+
 /* ── ÉVÉNEMENT EXCEPTIONNEL ── */
 .event-spotlight-card {
   background: linear-gradient(135deg, #0a1628 0%, #1a2e50 60%, #0f3460 100%);
