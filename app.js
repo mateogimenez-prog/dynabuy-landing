@@ -48,6 +48,7 @@ async function loadMeetings() {
   }
   renderBanner();
   renderMeetings(currentRegion);
+  setTimeout(() => handleSpPopup(), 1200);
 }
 
 function renderBanner() {
@@ -85,14 +86,10 @@ function switchRegion(region) {
 function handleSpPopup(region) {
   const popup = document.getElementById('sp-popup');
   if (!popup) return;
-  if (region === 'pays-basque-landes-bearn' && !sessionStorage.getItem('sp-closed')) {
+  if (!sessionStorage.getItem('sp-closed')) {
     popup.hidden = false;
     popup.style.animation = 'none';
-    requestAnimationFrame(() => {
-      popup.style.animation = '';
-    });
-  } else {
-    popup.hidden = true;
+    requestAnimationFrame(() => { popup.style.animation = ''; });
   }
 }
 
