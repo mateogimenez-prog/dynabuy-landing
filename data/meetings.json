@@ -88,15 +88,6 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35684#inscription"
     },
     {
-      "date": "Mardi 15 Décembre",
-      "dateISO": "2026-12-15",
-      "time": "12h30 à 14h00",
-      "venue": "Restaurant à déterminer",
-      "city": "Libourne",
-      "type": "Déjeuner",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35720#inscription"
-    },
-    {
       "date": "Jeudi 17 Décembre",
       "dateISO": "2026-12-17",
       "time": "15h00 à 17h30",
@@ -104,6 +95,15 @@
       "city": "Bordeaux",
       "type": "Après-midi",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35468#inscription"
+    },
+    {
+      "date": "Lundi 21 Décembre",
+      "dateISO": "2026-12-21",
+      "time": "12h30 à 14h00",
+      "venue": "Restaurant à déterminer",
+      "city": "Libourne",
+      "type": "Déjeuner",
+      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35720#inscription"
     },
     {
       "date": "Jeudi 14 Janvier",
@@ -247,7 +247,7 @@
       "date": "Vendredi 4 Décembre",
       "dateISO": "2026-12-04",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
+      "venue": "PULSEO",
       "city": "Dax",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35495#inscription"
@@ -272,10 +272,10 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/50456#inscription"
     },
     {
-      "date": "Jeudi 21 Janvier",
-      "dateISO": "2027-01-21",
+      "date": "Vendredi 22 Janvier",
+      "dateISO": "2027-01-22",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
+      "venue": "Now Coworking",
       "city": "Bayonne",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44457#inscription"
