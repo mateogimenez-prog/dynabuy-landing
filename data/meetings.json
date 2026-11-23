@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08T09:00:00.000Z",
+  "lastUpdated": "2026-11-23T13:44:00.000Z",
   "gironde": [
     {
       "date": "Vendredi 9 Octobre",
@@ -97,20 +97,11 @@
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35468#inscription"
     },
     {
-      "date": "Lundi 21 Décembre",
-      "dateISO": "2026-12-21",
-      "time": "12h30 à 14h00",
-      "venue": "Restaurant à déterminer",
-      "city": "Libourne",
-      "type": "Déjeuner",
-      "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/35720#inscription"
-    },
-    {
       "date": "Jeudi 14 Janvier",
       "dateISO": "2027-01-14",
       "time": "09h00 à 11h30",
-      "venue": "Lieu à déterminer",
-      "city": "Libourne",
+      "venue": "Château Soutard",
+      "city": "Saint-Émilion",
       "type": "Matinale",
       "registrationUrl": "https://www.rencontres-dirigeants.com/nos-rencontres/44598#inscription"
     },
